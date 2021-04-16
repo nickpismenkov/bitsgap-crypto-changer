@@ -1,0 +1,21 @@
+.text-button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #0083ff;
+  text-transform: none;
+  vertical-align: baseline;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 100%;
+
+  &_focused {
+    outline: 2px solid #0083ff;
+  }
+
+  &:hover {
+    color: #0067da;
+    background: none;
+  }
+}

@@ -1,0 +1,84 @@
+.take-profit {
+  &__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    background-color: #2c273d;
+    color: #fff;
+  }
+  
+  &__content {
+    padding: 10px 10px 0;
+  }
+
+  &__titles {
+    display: grid;
+    grid-gap: 16px;
+    align-items: center;
+    grid-template-columns: 44px 110px 62px 0;
+    margin-bottom: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
+  }
+
+  &__add-icon {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  &__cancel-icon {
+    color: #95939e;
+    transform: scale(0.6);
+    opacity: 0.7;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__add-button {
+    margin-top: 7px;
+    margin-left: -3px;
+    font-size: 14px;
+  }
+
+  &__inputs {
+    display: grid;
+    grid-gap: 16px;
+    align-items: center;
+    grid-template-columns: 44px 110px 62px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    margin-bottom: 8px;
+  }
+
+  &__projected-profit {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  &__projected-profit-title {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__projected-profit-value {
+    color: #fff;
+  }
+
+  &__projected-profit-currency {
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

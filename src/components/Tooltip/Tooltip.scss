@@ -1,0 +1,37 @@
+.tooltip {
+  font-size: 15px;
+  max-width: 240px;
+  padding: 15px;
+  border-radius: 0;
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.45);
+
+  background-color: themed(#fff, #252530);
+  color:  #fff;
+
+  &_error {
+    background-color: #ff4114;
+  }
+
+  &_small {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  &__arrow {
+    color: #252530;
+
+    &_error {
+      color: #ff4114;
+    }
+  }
+
+  // body height 100% causes incorrect popper positioning if top is not fixed (MUI uses popperjs)
+  // https://github.com/popperjs/popper-core/issues/457#issuecomment-367692177
+  &__popper {
+    top: 0;
+  }
+
+  &__fix-it-button {
+    margin: 10px 0;
+  }
+}

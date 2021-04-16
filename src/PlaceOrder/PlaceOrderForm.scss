@@ -1,0 +1,14 @@
+.place-order-form {
+  display: grid;
+  row-gap: 15px;
+  padding: 10px 10px 13px 10px;
+  background-color: #231f30;
+
+  &__header {
+    color: #fff;
+  }
+
+  &__take-profit {
+    margin: 0 -10px;
+  }
+}
